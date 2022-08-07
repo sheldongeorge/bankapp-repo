@@ -4,6 +4,6 @@ This is where we're update HTML
 CSS and JS  
 
 
-Adding an interactive main page to the bank app -LS  
-    
+Adding an interactive main page to the bank app -LS    
+Made changes to Bank Application -LS
 
