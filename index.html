@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HashCash</title>
-    <link rel="stylesheet" href="/bankapp-repo/styles.css">
+    <title>WestBank</title>
+    <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Rubik+Dirt&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <div class="main-header">
-      <h2>HashCash</h2>
-      <h4>Incorporated &copy</h4>
+    <div class="main-header" id="mainHeader">
+        <h1>WestBank</h1>
+        <h4>We'll take it ...</h4>
+        <h4>You'll ask for it back &trade;</h4>
     </div>
 
-    <div class="login-screen">
+    <div class="main-login">
       <div class="login-info">
-        <label for="">Enter a username: </label><br>
-        <input type="text" id="myTxt"><br>
-        <button class="my-button" id="myBtn" onclick="addUserName()" type="submit">Submit</button>
+        <label for="">First Name: </label><br>
+        <input type="text" id="userInput"><br>
+        <label for="">Password: </label><br>
+        <input type="text" id="userInput"><br>
+        <button id="myButton" type="submit">Submit</button>
       </div>
     </div>
-    <script src="/bankapp-repo/app.js"></script>
+
+    <script src="./app.js"></script>
   </body>
 </html>
