@@ -1,9 +1,11 @@
 * {
   max-width: 707px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background-image: url(/bankapp-repo/Pictures/bankBackground.jpg);
+  background-image: url(./Pictures/bankBackground.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,117 +14,82 @@ body {
 
 .main-header {
   position: relative;
+  text-align: center;
   border: 3px solid black;
   background-color: lightskyblue;
   opacity: 0.6;
   border-radius: 25px;
-  text-align: center;
+  height: 100px;
   width: 300px;
-  left: 185px;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.2em;
+  left: 203.5px;
+  top: 50px;
+  font-family: 'Rubik Dirt', cursive;
+  box-shadow: 10px 10px rgb(44, 42, 42);
   user-select: none;
+  cursor: pointer;
 }
 
-.login-screen {
+.main-header h1 {
   position: relative;
+  top: 10px;
+  color: black;
+  font-size: 2em;
+}
+
+.main-header h4 {
+  position: relative;
+  top: 20px;
+  font-size: 1em;
+}
+
+.main-login {
+  position: relative;
+  text-align: center;
+  top: 15%;
   border: 3px solid black;
   border-radius: 25px;
-  text-align: center;
-  height: 500px;
-  width: 618px;
-  margin: 25px;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-color: lightskyblue;
-  opacity: 0.8;
+  opacity: 0.6;
+  width: 500px;
+  height: 50%;
+  left: 100px;
 }
 
 .login-info {
   position: relative;
-  top: 35%;
-  width: 300px;
-  left: 159px;
-  border: 2px solid black;
-  border-radius: 25px;
-  background-color: black;
-  opacity: 0.8;
-  padding: 25px 0px;
+  top: 25%;
+  height: 200px;
+  font-size: 1.4em;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .login-info label {
-  position: relative;
-  bottom: 10px;
-  color: white;
+  user-select: none;
 }
+
+.login-info input {
+  border: 2px solid black;
+  background-color: lightslategray;
+  color: white;
+  height: 20px;
+  font-size: 15px;
+}
+
 .login-info button {
   position: relative;
-  top: 10px;
-  font-weight: bold;
+  top: 25px;
+  font-size: 0.8em;
   width: 100px;
-  height: 30px;
-  border: 2px solid white;
+  height: auto;
+  padding: 5px 0px;
   border-radius: 25px;
+  background-color: lightslategray;
+  font-weight: bold;
 }
 
 .login-info button:hover {
-  background-color: black;
   color: white;
+  cursor: pointer;
   transition: 0.6s ease;
-}
-
-.main-page {
-  position: relative;
-  top: 5%;
-  border: 3px solid black;
-  border-radius: 25px;
-  background-color: lightskyblue;
-  opacity: 0.8;
-  text-align: center;
-  height: 65%;
-}
-
-.mainpage-info {
-  position: relative;
-  top: 35%;
-  font-size: 1.4em;
-}
-
-.mainpage-info button {
-  border: 2px solid black;
-  border-radius: 25px;
-  font-weight: bold;
-  font-size: 0.7em;
-  padding: 5px 15px;
-}
-.mainpage-info button:hover {
-  background-color: black;
-  border: 2px solid white;
-  color: white;
-  transition: 0.6s ease;
-}
-
-.login-text {
-  position: relative;
-  float: left;
-  font-size: 1.2em;
-}
-
-.login-text a {
-  text-decoration: none;
-}
-
-.login-text a:hover {
-  color: white;
-  transition: 0.6s ease;
-}
-
-.login-text span {
-  color: white;
-}
-
-.login-user {
-  position: relative;
-  float: right;
-  color: white;
-  font-size: 1.2em;
 }
