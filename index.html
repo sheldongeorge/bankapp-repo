@@ -9,11 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <div class="main-header" id="mainHeader">
-        <h1>WestBank</h1>
+        <h1>West<span id="mainSpan">Bank</span></h1>
         <h4>We'll take it ...</h4>
         <h4>You'll ask for it back &trade;</h4>
     </div>
@@ -21,11 +24,21 @@
     <div class="main-login">
       <div class="login-info">
         <label for="">First Name: </label><br>
-        <input type="text" id="userInput"><br>
+        <input type="text" id="userFirst"><br>
         <label for="">Password: </label><br>
-        <input type="text" id="userInput"><br>
-        <button id="myButton" type="submit">Submit</button>
+        <input type="password" id="userPass"><br>
+        <button id="myButton" type="submit" onclick="changePage()">Submit</button>
       </div>
+    </div>
+
+    <div class="main-footer">
+      <p>
+        Brought to you by <br> 
+        the creators of MetaBed &copy;
+      </p>
+
+      <a href= "https://github.com/LukeStibbs" class="luke-tag" target="_blank">@LukeStibbs</a>
+      <a href= "https://github.com/sheldongeorge" class="sheldon-tag" target="_blank">@sheldongeorge</a>
     </div>
 
     <script src="./app.js"></script>
