@@ -4,14 +4,22 @@ let welcome_id = document.getElementById('welcomeSpan');
 let user_first = document.getElementById('userFirst');
 let user_pass = document.getElementById('userPass');
 let balance_span = document.getElementById('balanceSpan');
+let increase_button = document.getElementById('increaseButton');
+let decrease_button = document.getElementById('decreaseButton');
 let person = {
   name: "",
-  balance: "30,000",
+  balance: 30000,
   isAdmin: true,
+  increaseBalance: function() {
+    this.balance += 5000;
+  },
+  decreaseBalance: function() {
+    this.balance -= 5000;
+  }
 };
 
 main_header.addEventListener('mouseover', (event) => {
-  main_span.style.color = 'white';
+  main_span.style.color = 'darkgreen';
   main_span.style.transition = '0.6s ease';
 });
 
@@ -33,3 +41,12 @@ function assignName() {
 
 balance_span.innerText = person.balance;
 
+increase_button.addEventListener('click', (event) => {
+  person.increaseBalance();
+  balance_span.innerText = person.balance;
+});
+
+decrease_button.addEventListener('click', (event) => {
+  person.decreaseBalance();
+  balance_span.innerText = person.balance;
+});
